@@ -91,6 +91,7 @@
         
     -->
     <!-- <link href="css/impress-demo.css" rel="stylesheet" /> -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
@@ -148,40 +149,46 @@
 -->
 <div id="impress">
 
-    <div id="agenda" class="step slide" data-x="-1000" data-y="-1500" data-rotate="90" data-scale="5">
+    <div id="agenda" class="step slide" data-x="0" data-y="0" data-scale="1">
         <h1>Agenda</h1>
         <ul>
-            <li>A first touch</li>
-            <li>Product description</li>
-            <li>History</li>
-            <li>Why this topic?</li>
-            <li>The company today</li>
-            <li>Marketing</li>
-            <li>Future</li>
-            <li>Ciritcal aspects</li>
+            <li><a href="#aboutvideo">A first touch</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#whythistopic">Why this topic?</a></li>
+            <li><a href="#productdescription">Product description</a></li>
+            <li><a href="#companytoday">The company today</a></li>
+            <li><a href="#marketing">Marketing</a></li>
+            <li><a href="#crititcalangel">Ciritcal aspects</a></li>
+            <li><a href="#aboutvideo">Future</a></li>
         </ul>
     </div>
-
-
-    <div id="aboutvideo" class="step slide" data-x="0" data-y="-750">
-        <iframe width="853" height="480" src="http://www.youtube.com/embed/A3PDXmYoF5U#t=1m03s" frameborder="0" allowfullscreen></iframe>
+    
+    <div id="aboutvideo" class="step slide" data-x="1200" data-y="0" data-rotate-y="40" data-scale="1">
+        <div id='aboutvideo-youtube'> </div>
     </div>
 
-    <div id="history" class="step slide" data-x="1000" data-y="-500">
+    <div id="history" class="step slide" data-x="2400" data-y="0" data-rotate="90" data-scale="1">
         <h1>History</h1>
         <ul>
-            <li>todo</li>
+            <li>Cameras in 2009</li>
+            <li>
+                <ul>
+                    <li>heavy</li>
+                    <li>expensive</li>
+                    <li>fragile</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
-    <div id="whythistopic" class="step slide" data-x="1500" data-y="0">
+    <div id="whythistopic" class="step slide" data-x="2400" data-y="1000" data-scale="2">
         <h1>GoPro and us</h1>
         <ul>
             <li>todo</li>
         </ul>
     </div>
 
-    <div id="productdescription" class="step slide" data-x="2200" data-y="500">
+    <div id="productdescription" class="step slide" data-x="1200" data-y="1000" data-rotate="180" data-scale="1">
         <h1>A camera which is</h1>
         <ul>
             <li>rugged</li>
@@ -191,29 +198,45 @@
         </ul>
     </div>
 
-    <div id="companytoday" class="step slide" data-x="3000" data-y="1500">
+    <div id="companytoday" class="step slide" data-x="0" data-y="1000" data-scale="1">
         <h1>health/market position</h1>
         <ul>
             <li>todo</li>
         </ul>
     </div>
 
-    <div id="crititcalangel" class="step slide" data-x="4000" data-y="2500">
+    <div id="marketing" class="step slide" data-x="-1200" data-y="1000" data-rotate="-90" data-scale="1">
+        <h1>Marketing</h1>
+        <ul>
+            <li>todo</li>
+        </ul>
+    </div>
+
+    <div id="crititcalangel" class="step slide" data-x="-1200" data-y="0" data-scale="1">
         <h1>A crititcal angel</h1>
         <ul>
             <li>todo</li>
         </ul>
     </div>
 
-    <div id="sources" class="step slide" data-x="5000" data-y="3500">
+    <div id="questions" class="step" data-x="875" data-x="-1200" data-y="-1000" data-z="100" data-scale="1">
+        <h1>Questions</h1>
+        <span style="font-size: 300px; margin-left: 200px;">?</span>
+    </div>
+
+    <div id="sources" class="step slide" data-x="0" data-y="-1000" data-rotate-x="60" data-scale="1">
         <h1>Sources</h1>
         <ul>
             <li><a href="http://en.wikipedia.org/wiki/GoPro" traget="_blank">Wikipedia EN</li>
         </ul>
     </div>
 
+    <div id="thankyou" class="step" data-x="-1000" data-y="2800" data-scale="1">
+        <span>Thank you for your attention.</span>
+    </div>
+
     
-    <div id="overview" class="step" data-x="6000" data-y="4500" data-scale="10">
+    <div id="overview" class="step" data-x="600" data-y="300" data-scale="5">
     </div>
 
 </div>
@@ -267,8 +290,10 @@ if ("ontouchstart" in document.documentElement) {
     
 -->
 <script src="js/impress.js"></script>
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/jquery.tubeplayer.min.js"></script>
+<script src="js/main.js"></script>
 <script>impress().init();</script>
-
 <!--
     
     The `impress()` function also gives you access to the API that controls the presentation.
