@@ -65,6 +65,105 @@ em {
     font-style: italic 
 }
 
+blockquote {
+    padding-left: 100px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 50px;
+    background-image: url(../img/quote.png);
+    background-position: 0 left;
+    background-repeat: no-repeat;
+    text-indent: 23px;
+} 
+
+.center {
+    margin-left: auto;   
+    margin-right: auto; 
+    display: block;
+}
+
+/*  --------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container, 
+div.container { 
+    position: relative; 
+    width: 940px; 
+    margin: 0 auto; 
+    padding: 0; 
+}
+ 
+ 
+/*  --------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, 
+.row { 
+    margin: 0 0 18px -20px; 
+}
+
+.column, .columns { 
+    float: left; 
+    display: inline; 
+    margin: 0 0 0 20px; 
+}
+ 
+.one { 
+    width: 300px; 
+}
+
+.two { 
+    width: 620px; 
+}
+
+.three { 
+    width: 940px; 
+}
+ 
+.offset-by-one-half { 
+    margin-left: 160px; 
+}
+
+.offset-by-one { 
+    margin-left: 320px; 
+}
+ 
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, 
+.row:after, 
+.clearfix:after { 
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+}
+
+* html .column-row, 
+* html .row, 
+* html .clearfix { 
+    height: 1%;
+}
+
+.column-row, 
+.row, 
+.clearfix { 
+    display: inline-block; 
+}
+
+.column-row, 
+.row, 
+.clearfix { 
+    display: block; 
+}
+ 
+/*  IE6 Problems ---------- */
+body.ie .column-row { width: 960px; }
+body.ie .two-thirds .column-row { width: 2580px; }
+
 /*
     Now here is when interesting things start to appear.
     
