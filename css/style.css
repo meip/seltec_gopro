@@ -35,21 +35,86 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: square;
+
+/* List styles */
+ol, 
+ul,
+li {
+    list-style: none;
 }
+ 
+ul li {
+    padding: 8px 15px;
+    margin: 10px 0;
+}
+ 
+ul li:nth-child(odd) {
+    background: rgba(50,50,50,0.1);
+}
+ 
+ul li:nth-child(odd):hover {
+    background: rgba(50,50,50,0.3); 
+}
+ 
+ul li:nth-child(even) {
+    background: rgba(50,50,50,0.3);
+}
+ 
+ul li:nth-child(even):hover {
+    background: rgba(50,50,50,0.5);
+}
+ 
+ul li:nth-child(3n+1) {
+    -webkit-transform:rotate(-0.6deg);
+    -moz-transform:rotate(-0.6deg);
+    transform:rotate(-0.6deg);
+}
+ 
+ul li:nth-child(3n+2) {
+    -webkit-transform:rotate(0.5deg);
+    -moz-transform:rotate(0.5deg);
+    transform:rotate(0.5deg);
+}
+
+/* Hyperlinks */
+a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: underline;
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+    
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,255,255,1.0);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+/* Quotes */
 blockquote, q {
     quotes: none;
+    padding-left: 100px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 50px;
+    background-image: url(../img/quote.png);
+    background-position: 0 left;
+    background-repeat: no-repeat;
+    text-indent: 23px;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
 /*
@@ -64,21 +129,6 @@ i,
 em { 
     font-style: italic 
 }
-
-blockquote {
-    padding-left: 100px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-right: 10px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    margin: 50px;
-    background-image: url(../img/quote.png);
-    background-position: 0 left;
-    background-repeat: no-repeat;
-    text-indent: 23px;
-} 
-
 .center {
     margin-left: auto;   
     margin-right: auto; 
@@ -186,30 +236,6 @@ div#impress {
     background:     -ms-radial-gradient(rgba(68, 114, 148, 1), rgba(41, 64, 82, 1));
     background:      -o-radial-gradient(rgba(68, 114, 148, 1), rgba(41, 64, 82, 1));
     background:         radial-gradient(rgba(68, 114, 148, 1), rgba(41, 64, 82, 1));    
-}
-
-a {
-    color: rgba(255,255,255,0.9);
-    text-decoration: underline;
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
-    
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
-}
-
-a:hover,
-a:focus {
-    background: rgba(255,255,255,1.0);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
-}
-
-li {
-    list-style: circle;
-    margin-left: 1em;
 }
 
 .fallback-message {
