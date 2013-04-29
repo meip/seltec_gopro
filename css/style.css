@@ -138,8 +138,8 @@ em {
 /*  --------------------------------------------------
 Container
 -------------------------------------------------- */
-div#container, 
-div.container { 
+div#grid, 
+div.grid { 
     position: relative; 
     width: 940px; 
     margin: 0 auto; 
