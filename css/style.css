@@ -45,7 +45,6 @@ li {
  
 ul li {
     padding: 8px 15px;
-    margin: 10px 0;
 }
  
 ul li:nth-child(odd) {
@@ -79,7 +78,7 @@ ul li:nth-child(3n+2) {
 /* Hyperlinks */
 a {
     color: rgba(255,255,255,0.9);
-    text-decoration: underline;
+    text-decoration: none;
     text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
     border-radius: 0.2em;
     
@@ -92,7 +91,8 @@ a {
 
 a:hover,
 a:focus {
-    background: rgba(255,255,255,1.0);
+    padding-right: 100px;
+    background: rgba(50,50,50,0.7);
     text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
 
@@ -226,7 +226,7 @@ div#impress {
     color: rgba(255, 255, 255, 1);
     min-height: 740px;
     
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: 'Roboto Condensed', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 12px;
 
     background: rgb(68, 114, 148);
@@ -236,6 +236,11 @@ div#impress {
     background:     -ms-radial-gradient(rgba(68, 114, 148, 1), rgba(41, 64, 82, 1));
     background:      -o-radial-gradient(rgba(68, 114, 148, 1), rgba(41, 64, 82, 1));
     background:         radial-gradient(rgba(68, 114, 148, 1), rgba(41, 64, 82, 1));    
+}
+
+div#impress h1 {
+    font-family: 'Roboto Condensed', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: bold;
 }
 
 .fallback-message {
@@ -334,8 +339,7 @@ div#impress {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1.5;
 }
 .step h1 {
