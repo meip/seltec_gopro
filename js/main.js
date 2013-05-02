@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#aboutvideo-youtube').tubeplayer({
-        width: 853, // the width of the player
-        height: 480, // the height of the player
+        width: 960, // the width of the player
+        height: 540, // the height of the player
         allowFullScreen: "true", // true by default, allow user to go full screen
         initialVideo: "A3PDXmYoF5U", // the video that is loaded into the player
         preferredQuality: "hd720", // preferred quality: default, small, medium, large, hd720
